@@ -1,0 +1,1 @@
+docker run -it --name data-copier -e BASE_DIR=/retail_db_json -e DB_HOST=91d398bc8b9a -e DB_PORT=5432 -e DB_NAME=retail_db -e DB_USER=retail_user -e DB_PASS=itversity -v C:\Users\Mohsen\Research\data\retail_db_json:/retail_db_json --rm --network data-copier-nw data-copier python /data-copier/app/app.py departments,categories,customers
